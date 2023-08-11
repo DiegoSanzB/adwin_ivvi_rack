@@ -3,8 +3,11 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Data
+# Measurement data
 *.csv
+
+# Adbasic backups
+*.BAK
 
 # C extensions
 *.so
