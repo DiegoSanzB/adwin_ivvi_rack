@@ -1,7 +1,7 @@
 from .boot import boot
 
 # Constants
-DEVICE_NUMBER = 0x150
+DEVICE_NUMBER = 0x1
 RAISE_EXEPTIONS = 1
 ADWIN_PROCESSOR_TYPE = 9
 

@@ -41,7 +41,7 @@ def get_delays(scanrate_hz, integration_time_ms, settling_time_ms, clockfrequenc
     '''
     Converts scanrate (Hz), integrsation time (ms), settling_time (ms), and ADwin clockfrequency (Hz) to ADwin clock cycles
     ''' 
-    loops_av = integration_time_ms / 1000.0 * scanrate_hz
+    loops_av = (integration_time_ms / 1000.0) * scanrate_hz
     process_delay = clockfrequency_hz / scanrate_hz
-    loops_waiting = ( settling_time_ms / 1000.0) / (process_delay * 1/clockfrequency_hz )
+    loops_waiting = (settling_time_ms / 1000.0) * scanrate_hz
     return loops_av, process_delay, loops_waiting
